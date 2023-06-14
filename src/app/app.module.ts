@@ -9,7 +9,6 @@ import { MainComponent } from './shared/main/main.component';
 import { MaincardComponent } from './components/maincard/maincard.component';
 import { ListComponent } from './components/characters/list/list.component';
 import { ModelComponent } from './model/model.component';
-import { ListItemComponent } from './components/characters/list-item/list-item.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +19,6 @@ import { ListItemComponent } from './components/characters/list-item/list-item.c
     MaincardComponent,
     ListComponent,
     ModelComponent,
-    ListItemComponent
   ],
   imports: [
     BrowserModule,

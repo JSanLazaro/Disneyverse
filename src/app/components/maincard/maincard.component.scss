@@ -1,3 +1,7 @@
+$phone:480px;
+$tablet:728px;
+$desktop:1024px;
+
 .maincard_bloq {
   // width: 30%;
   height:40dvw;
@@ -6,6 +10,7 @@
   //   perspective: 500px;
   // border: 3px solid blue;
   margin-bottom: 20%;
+  overflow: hidden;
 }
 .maincard_bloq:hover .card {
   transform: rotateY(180deg);
@@ -62,12 +67,40 @@
     position: absolute;
     color: whitesmoke;
     // color: black;
-    font-size: 2dvh;
-    
+    // font-size: 2dvh;    
     bottom: 0px;
   }
 }
 
 .face.behind {
   transform: rotateY(180deg);
+  span.film, span.serial,span.game{
+    // color: rgb(21, 16, 63);
+    color: aquamarine;
+  }
+  h2,h3,h4,h5,h6{
+    // color: aquamarine;
+    color: rgb(21, 16, 63);
+  }
+}
+@media (max-width:$phone){
+  .maincard_bloq{
+    height:80dvw;
+    margin-bottom: 10%;
+  }
+  
+}
+@media (min-width:$phone) and (max-width: $tablet){
+  .maincard_bloq{
+    height:60dvw;
+    margin-bottom: 15%;
+  }
+  
+}
+@media (min-width:$desktop) {
+  .maincard_bloq{
+    height:40dvw;
+    margin-bottom: 20%;
+  }
+  
 }
