@@ -14,7 +14,7 @@ export class MaincardComponent {
     this.texto = "";
     this.isFront = true;
   }
-  saludar(){
+  greet(){
     const cardElement = document.getElementById("card");
     // if(cardElement && this.isFront){
     //   cardElement.style.transform = "rotateY(180deg)";

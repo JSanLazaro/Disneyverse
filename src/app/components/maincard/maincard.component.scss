@@ -3,14 +3,13 @@ $tablet:728px;
 $desktop:1024px;
 
 .maincard_bloq {
-  // width: 30%;
-  height:40dvw;
-  // display: block;
+  height:40dvw;  
   position: relative;
-  //   perspective: 500px;
   // border: 3px solid blue;
+  // border-radius: 10%;
   margin-bottom: 20%;
   overflow: hidden;
+  background-color: transparent;
 }
 .maincard_bloq:hover .card {
   transform: rotateY(180deg);
@@ -21,6 +20,9 @@ $desktop:1024px;
   height: 100%;
   transform-style: preserve-3d;
   transition: all 0.5s linear;
+  // border: 3px solid blue;
+  // border-radius: 10%;
+  background-color: transparent;
 }
 
 .face {
@@ -37,7 +39,7 @@ $desktop:1024px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  // box-shadow: 2px 2px 8px 4px #d3d3d3d1;
   position: absolute;
   backface-visibility: hidden;
   .cropped {
@@ -72,7 +74,7 @@ $desktop:1024px;
   }
 }
 
-.face.behind {
+.face.behind {  
   transform: rotateY(180deg);
   span.film, span.serial,span.game{
     // color: rgb(21, 16, 63);
