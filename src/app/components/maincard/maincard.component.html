@@ -1,9 +1,21 @@
-<p>maincard works!</p>
-<div class="maincard_bloq">
-    <div class="cropped">
-        <img class="card__image" src="../../../assets/images/Adira_Tangled.webp" alt="" onmouseover="set(this)" />        
+<div class="maincard_bloq" (click)="saludar()">
+  <div id="card" class="card">
+    <div class="face">
+      <div class="cropped">
+        <img
+          class="card__image"
+          src={{character.imageUrl}}
+          alt=""
+          
+        />
+      </div>
+      <div class="card__title">
+        <h2>{{character.name}}</h2>
+      </div>
     </div>
-    <div class="card__title">
-        <h2>Adira Tangled</h2>
+    <div class="face behind">
+      <p>texto por detras</p>
     </div>
+  </div>
 </div>
+

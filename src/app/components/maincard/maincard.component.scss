@@ -1,32 +1,73 @@
 .maincard_bloq {
+  // width: 30%;
+  height:40dvw;
+  // display: block;
+  position: relative;
+  //   perspective: 500px;
+  // border: 3px solid blue;
+  margin-bottom: 10%;
+}
+.maincard_bloq:hover .card {
+  transform: rotateY(180deg);
+}
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+}
+
+.face {
+  box-sizing: border-box;
+  position: absolute;
+
   border: 3px solid white;
-  /* margin:10px auto; */
   border-radius: 15px;
-  padding: 23px;
-  max-width: 220px;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
   background-color: rgba(70, 130, 180, 0.88);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  position: absolute;
+  backface-visibility: hidden;
   .cropped {
-    position: relative;
-    width: 100%;
-    height: 250px;
+    position: absolute;
+    min-width: 85%;
+    max-width: 90%;
+    height: 70%;
     overflow: hidden;
-    // border: 5px solid black;
     border-radius: 15px;
+    // border: 2px solid black;
+    contain: content;
     img {
       width: 100%;
-    margin:auto;
-    //   margin: -25px 0px 0px 0px;
-      object-fit: contain;
+      // height: auto;
+      //   margin: -25px 0px 0px 0px;
+      // object-fit: contain;
+      
     }
+    @supports(object-fit: cover){
+        img{
+          height: 100%;
+          object-fit: cover;
+        }
+      }
   }
-  .card__title{
+  .card__title {
+    position: absolute;
     color: whitesmoke;
+    // color: black;
+    font-size: 2dvh;
+    
+    bottom: 0px;
   }
+}
+
+.face.behind {
+  transform: rotateY(180deg);
 }
