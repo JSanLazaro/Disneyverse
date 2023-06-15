@@ -1,16 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-maincardturn',
   templateUrl: './maincardturn.component.html',
   styleUrls: ['./maincardturn.component.scss']
 })
-export class MaincardturnComponent {
-}
+export class MaincardturnComponent implements OnInit{
+  @Input() containeridlower = document.getElementById('maincard_bloq_turn')
 
+  constructor() { }
 
-class conectar{
-conectar(){
-  console.log("conectado")
-}
+  ngOnInit(): void {
+    if (this.container) {
+      this.containeridsuperior = document.getElementById('maincard_bloq');
+    } else {
+      this.containeridlower = document.getElementById('maincard_bloq_turn');
+    }
   }
+}
+
