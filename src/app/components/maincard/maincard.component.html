@@ -1,10 +1,16 @@
 <p>maincard works!</p>
-<app-maincardturn (containeridlower)="idlower()"></app-maincardturn>
-<div (click)="maincardturn1()" id="maincard_bloq" class="maincard_bloq">
+<div class="maincard_bloq">
     <div class="cropped">
-        <img class="card__image" src="../../../assets/images/Adira_Tangled.webp" alt="" />        
+        <img class="card__image" src="../../../assets/images/Adira_Tangled.webp" alt="" onmouseover="set(this)" />        
     </div>
-    <div class="card__title">
-        <h2>Adira Tangled</h2>
+    <div class="face behind">
+      <span class="film">Film: </span>
+      <h4>{{character.films}}</h4>
+      <span class="serial">Serial: </span>
+      <h5>{{character.tvShows}}</h5>
+      <span class="game">Videogame: </span>
+      <h6>{{character.videoGames}}</h6>
     </div>
+  </div>
 </div>
+

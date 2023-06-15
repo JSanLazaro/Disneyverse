@@ -7,8 +7,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { MainComponent } from './shared/main/main.component';
 import { MaincardComponent } from './components/maincard/maincard.component';
-import { MaincardturnComponent } from './components/maincardturn/maincardturn.component';
-import { MaincardjoinComponent } from './components/maincardjoin/maincardjoin.component';
+import { ListComponent } from './components/characters/list/list.component';
+import { ModelComponent } from './model/model.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +16,9 @@ import { MaincardjoinComponent } from './components/maincardjoin/maincardjoin.co
     FooterComponent,
     HeaderComponent,
     MainComponent,
+    MaincardComponent,
+    ListComponent,
+    ModelComponent,
     MaincardComponent,
     MaincardturnComponent,
     MaincardjoinComponent
