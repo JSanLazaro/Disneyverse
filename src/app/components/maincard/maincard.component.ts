@@ -27,7 +27,7 @@ export class MaincardComponent {
     // this.texto ="hola"
     // alert("popup en saludar de componente maincard")
   }
-export class MaincardComponent{
+/* export class MaincardComponent{
    constructor() { }
    maincardturn1(){
     containeridlower
@@ -40,7 +40,7 @@ export class MaincardComponent{
 
   idlower(){
     containeridlower
-  }
+  } */
     
   
 

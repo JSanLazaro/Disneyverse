@@ -20,8 +20,8 @@ import { ModelComponent } from './model/model.component';
     ListComponent,
     ModelComponent,
     MaincardComponent,
-    MaincardturnComponent,
-    MaincardjoinComponent
+/*     MaincardturnComponent,
+    MaincardjoinComponent */
   ],
   imports: [
     BrowserModule,
