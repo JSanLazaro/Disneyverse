@@ -5,19 +5,22 @@ import { Component } from '@angular/core';
   templateUrl: './maincard.component.html',
   styleUrls: ['./maincard.component.scss']
 })
-export class MaincardComponent  implements OnInit{
-  constructor() { }
-  let container: string
-    ngOnInit(): void {
-      if (container) {
-        const containeridsuperior = document.getElementById('maincard_bloq');
-      } else {
-        const containeridlower = document.getElementById('maincard_bloq_turn');
-      }
+export class MaincardComponent{
+   constructor() { }
+   maincardturn1(){
+    containeridlower
+    if () {
+      const containeridsuperior = document.getElementById('maincard_bloq');
+    } else {
+      const containeridlower = document.getElementById('maincard_bloq_turn');
     }
-  
+  }
 
-  maincardturn1(){}
+  idlower(){
+    containeridlower
+  }
+    
+  
 
 
 }
