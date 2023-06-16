@@ -9,6 +9,7 @@ import { MainComponent } from './shared/main/main.component';
 import { MaincardComponent } from './components/maincard/maincard.component';
 import { ListComponent } from './components/characters/list/list.component';
 import { ModelComponent } from './model/model.component';
+import { HeartComponent } from './heart/heart.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ModelComponent } from './model/model.component';
     MainComponent,
     MaincardComponent,
     ListComponent,
-    ModelComponent,
+    ModelComponent,,
+    HeartComponent
   ],
   imports: [
     BrowserModule,
