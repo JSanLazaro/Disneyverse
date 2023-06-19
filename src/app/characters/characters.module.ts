@@ -2,16 +2,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CharactersRoutingModule } from './characters-routing.module';
-import { LayoutComponent } from './views/layout/layout.component';
+import { ListComponent } from '../components/characters/list/list.component';
+import { MaincardComponent } from '../components/maincard/maincard.component';
 
 
 @NgModule({
   declarations: [
-    LayoutComponent
-  ],
+    ListComponent,
+    MaincardComponent],
   imports: [
     CommonModule,
-    CharactersRoutingModule
+    CharactersRoutingModule,    
   ]
 })
 export class CharactersModule { }
