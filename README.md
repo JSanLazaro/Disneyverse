@@ -22,4 +22,14 @@ Extras:
 ​
 ​
 
-​
+​Prototipo final:
+![image](https://github.com/JSanLazaro/Disneyverse/assets/133367024/611708e0-70e9-4c28-ae0e-6c57b2356d32)
+
+Project team:
+JSanLazaro 
+NataliaGM1
+Hrmiqui
+Maria-VBV
+PabloEsteban87
+DirtdiverIV 
+Maesga1
