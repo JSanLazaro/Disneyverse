@@ -12,7 +12,7 @@ $desktop:1024px;
   background-color: transparent;
 }
 .maincard_bloq:hover .card {
-  transform: rotateY(180deg);
+  // transform: rotateY(180deg);
 }
 .card {
   position: absolute;
@@ -64,6 +64,11 @@ $desktop:1024px;
           object-fit: cover;
         }
       }
+  }
+  .heart_image{
+    position: absolute;   
+    bottom: 0px;
+    right: 0;
   }
   .card__title {
     position: absolute;

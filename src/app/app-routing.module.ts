@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './shared/main/main.component';
 import { MaincardComponent } from './components/maincard/maincard.component';
 import { ListComponent } from './components/characters/list/list.component';
+import { FavListComponent } from './components/characters/fav-list/fav-list.component';
 
 const routes: Routes = [
   {
@@ -10,8 +11,8 @@ const routes: Routes = [
     component:ListComponent
   },
   {
-    path:'characters',
-    loadChildren:()=>import('./characters/characters.module').then((m)=>m.CharactersModule)
+    path:'favorites',
+    component:FavListComponent
   }
 ];
 

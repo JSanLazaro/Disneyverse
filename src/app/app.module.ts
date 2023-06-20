@@ -18,11 +18,12 @@ import { FavListComponent } from './components/characters/fav-list/fav-list.comp
     FooterComponent,
     HeaderComponent,
     MainComponent,
-    MaincardComponent,
-    ListComponent,
     ModelComponent,
     HeartComponent,
     FavListComponent,
+    ListComponent,
+    MaincardComponent
+    
   ],
   imports: [
     BrowserModule,

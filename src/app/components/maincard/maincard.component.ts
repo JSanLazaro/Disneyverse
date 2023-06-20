@@ -1,5 +1,6 @@
 import { Component,Input } from '@angular/core';
 import { Character } from 'src/app/model/Character.model';
+import { SharedService } from 'src/app/services/shared.service';
 
 @Component({
   selector: 'app-maincard',
@@ -10,7 +11,7 @@ export class MaincardComponent {
   @Input() character!:Character;
   texto:string;
   isFront:boolean;
-  constructor(){
+  constructor(private sharedService: SharedService){
     this.texto = "";
     this.isFront = true;
   }
@@ -26,5 +27,12 @@ export class MaincardComponent {
     
     // this.texto ="hola"
     // alert("popup en saludar de componente maincard")
+  }
+  addToFavorites(){
+    console.log("added to favorites "+ this.character._id);
+    this.sharedService.favorites.addId(this.character._id);
+  }
+  removeFromFavoties(id:number){
+    this.sharedService.favorites.removeId(id);
   }
 }
