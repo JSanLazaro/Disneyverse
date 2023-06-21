@@ -22,13 +22,16 @@ a{color: white;}
       }
     }
   }
+  #menu-toggle {
+    display: none;
+  }
 
   // Estilos para pantallas pequeñas
   @media (max-width: 768px) {
     ul {
       transform: translateX(200%);
       position: absolute;
-      top:2% ;
+      top:14% ;
       right: 0;
       background-color: rgba(5, 5, 54, 1);
       z-index: 100;
