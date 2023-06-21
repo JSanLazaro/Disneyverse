@@ -3,15 +3,13 @@
     <div class="face">
       <div class="cropped">
         <img
-          class="card__image"
-          src={{character.imageUrl}}
-          alt=""
-          
-        />
+          class="card__image" src={{character.imageUrl}} alt=""/>
       </div>
       <div class="card__title">
-       <h3>{{character.name}}</h3> 
+       <div class="tittleDiv"><h3>{{character.name}}</h3></div>
+       <div class="heartCompDiv"><app-heart></app-heart></div> 
       </div>
+      
     </div>
     <div class="face behind">
       <span class="film">Film: </span>

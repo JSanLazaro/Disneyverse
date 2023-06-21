@@ -11,6 +11,7 @@ import { ListComponent } from './components/characters/list/list.component';
 import { ModelComponent } from './model/model.component';
 import { HeartComponent } from './heart/heart.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,8 +20,8 @@ import { HeartComponent } from './heart/heart.component';
     MainComponent,
     MaincardComponent,
     ListComponent,
-    ModelComponent,,
-    HeartComponent
+    ModelComponent,
+    HeartComponent,
   ],
   imports: [
     BrowserModule,
