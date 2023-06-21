@@ -3,6 +3,7 @@ import { Character } from '../../../model/Character.model';
 import { characters } from 'src/app/shared/mock-characters';
 import { SharedService } from 'src/app/services/shared.service';
 import { Favorites } from 'src/app/shared/Favorites';
+
 @Component({
   selector: 'app-fav-list',
   templateUrl: './fav-list.component.html',

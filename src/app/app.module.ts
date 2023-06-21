@@ -11,6 +11,8 @@ import { ListComponent } from './components/characters/list/list.component';
 import { ModelComponent } from './model/model.component';
 import { HeartComponent } from './components/heart/heart/heart.component';
 import { FavListComponent } from './components/characters/fav-list/fav-list.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -22,12 +24,14 @@ import { FavListComponent } from './components/characters/fav-list/fav-list.comp
     HeartComponent,
     FavListComponent,
     ListComponent,
-    MaincardComponent
+    MaincardComponent,
+    SidebarComponent
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

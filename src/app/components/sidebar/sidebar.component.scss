@@ -1,0 +1,38 @@
+nav, .sidebar {
+    position: fixed;
+    z-index: 1000;
+    background-color: gray;
+    border-radius: 0px 6px 6px 0px;
+    // position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+    box-shadow: 8px 8px 18px #00000030;
+    .sidebar__content{        
+        .toggle-btn{
+            // border: 2px solid blue; 
+            color: blue;  
+            // margin-left: 300px;    
+            float: right;        
+            span{
+                font-size: 0.99rem;
+                &.close{
+                    opacity: 0;
+                }
+                &:hover{
+                    color: red;
+                }
+            }
+        }
+    }
+    &:hover{
+        .sidebar__content{
+            .toggle-btn{
+                span{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

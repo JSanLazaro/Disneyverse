@@ -1,0 +1,9 @@
+<nav class="sidebar" [@sidebarTrigger]="isOpen ? 'open' : 'close'">
+    <div class="sidebar__content">
+        <a (click)="toggleOpen()" class="toggle-btn">
+            <span *ngIf="showSidebar" class="materia-icons close">close</span>
+            <span *ngIf="!showSidebar" class="material-icons">menu</span>
+        </a>
+        <p>Sidebar</p>
+    </div>
+</nav>
