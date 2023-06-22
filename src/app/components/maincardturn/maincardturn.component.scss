@@ -27,7 +27,6 @@ $desktop:1024px;
 
 .face {
   box-sizing: border-box;
-  position: absolute;
 
   border: 3px solid white;
   border-radius: 15px;
@@ -38,7 +37,6 @@ $desktop:1024px;
 
   display: flex;
   flex-direction: column;
-  position: relative;
   align-items: center;
   // box-shadow: 2px 2px 8px 4px #d3d3d3d1;
   position: absolute;

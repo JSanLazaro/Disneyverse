@@ -21,6 +21,7 @@ import { HeartComponent } from './heart/heart.component';
     MaincardComponent,
     ListComponent,
     ModelComponent,
+    HeartComponent
   ],
   imports: [
     BrowserModule,
