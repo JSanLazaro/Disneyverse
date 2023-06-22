@@ -51,6 +51,5 @@ export class MaincardComponent {
       this.removeTurnClass();
     }
     this.isFront = !this.isFront;
-    console.log('functionClick ' + this.isFront);
   }
 }

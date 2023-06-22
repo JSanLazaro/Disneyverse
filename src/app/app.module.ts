@@ -10,6 +10,7 @@ import { MaincardComponent } from './components/maincard/maincard.component';
 import { ListComponent } from './components/characters/list/list.component';
 import { ModelComponent } from './model/model.component';
 import { HeartComponent } from './heart/heart.component';
+import { FavoriteratingComponent } from './components/favoriterating/favoriterating.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HeartComponent } from './heart/heart.component';
     MaincardComponent,
     ListComponent,
     ModelComponent,
-    HeartComponent
+    HeartComponent,
+    FavoriteratingComponent
   ],
   imports: [
     BrowserModule,
