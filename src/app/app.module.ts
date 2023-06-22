@@ -9,6 +9,8 @@ import { MainComponent } from './shared/main/main.component';
 import { MaincardComponent } from './components/maincard/maincard.component';
 import { ListComponent } from './components/characters/list/list.component';
 import { ModelComponent } from './model/model.component';
+import { MaincardturnComponent } from './components/maincardturn/maincardturn.component';
+import { MaincardjoinComponent } from './components/maincardjoin/maincardjoin.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +22,8 @@ import { ModelComponent } from './model/model.component';
     ListComponent,
     ModelComponent,
     MaincardComponent,
-/*     MaincardturnComponent,
-    MaincardjoinComponent */
+    MaincardturnComponent,
+     MaincardjoinComponent
   ],
   imports: [
     BrowserModule,

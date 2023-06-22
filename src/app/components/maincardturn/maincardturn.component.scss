@@ -1,30 +1,114 @@
-.maincard_bloq_turn {
-    border: 3px solid white;
-    /* margin:10px auto; */
-    border-radius: 15px;
-    padding: 23px;
-    max-width: 220px;
-    background-color: rgba(70, 130, 180, 0.88);
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    align-items: center;
-    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-    .cropped {
+$phone:480px;
+$tablet:728px;
+$desktop:1024px;
 
+#maincard_bloq_turn {
+  height: 30vw;  
+  position: relative;
+  // border: 3px solid blue;
+  // border-radius: 10%;
+  margin-bottom: 20%;
+  overflow: hidden;
+  background-color: transparent;
+}
+/* .maincard_turn:hover .card {
+  transform: rotateY(180deg);
+} */
+.card2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+  // border: 3px solid blue;
+  // border-radius: 10%;
+  background-color: transparent;
+}
+
+.face {
+  box-sizing: border-box;
+  position: absolute;
+
+  border: 3px solid white;
+  border-radius: 15px;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(70, 130, 180, 0.88);
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  // box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  position: absolute;
+  backface-visibility: hidden;
+  .cropped {
+    position: absolute;
+    min-width: 85%;
+    max-width: 90%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 15px;
+    // border: 2px solid black;
+    contain: content;
+    img {
       width: 100%;
-      height: 250px;
-      overflow: hidden;
-      // border: 5px solid black;
-      border-radius: 15px;
-      img {
-        width: 100%;
-      margin:auto;
+      // height: auto;
       //   margin: -25px 0px 0px 0px;
-        object-fit: contain;
+      // object-fit: contain;
+      
+    }
+    @supports(object-fit: cover){
+        img{
+          height: 100%;
+          object-fit: cover;
+        }
       }
-    }
-    .card__title{
-      color: whitesmoke;
-    }
+  }
+  .card__title {
+    position: absolute;
+    color: whitesmoke;
+    // color: black;
+    // font-size: 2dvh;    
+    bottom: 0px;
+  }
+}
+
+
+.face.behind {  
+  transform: rotateY(180deg);
+  span.film, span.serial,span.game{
+    // color: rgb(21, 16, 63);
+    color: aquamarine;
+  }
+  h2,h3,h4,h5,h6{
+    // color: aquamarine;
+    color: rgb(21, 16, 63);
+  }
+}
+@media (max-width:$phone){
+  .maincard_bloq{
+    height:80dvw;
+    margin-bottom: 10%;
+  }
+  
+}
+@media (min-width:$phone) and (max-width: $tablet){
+  .maincard_bloq{
+    height:60dvw;
+    margin-bottom: 15%;
+  }
+  
+}
+@media (min-width:$desktop) {
+  .maincard_bloq{
+    height:40dvw;
+    margin-bottom: 20%;
+  }
+  
+}
+h1{
+  position:absolute;
+  top: 700px;
 }

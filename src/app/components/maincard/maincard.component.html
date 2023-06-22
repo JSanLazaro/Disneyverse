@@ -1,16 +1,35 @@
-<p>maincard works!</p>
-<div class="maincard_bloq">
-    <div class="cropped">
-        <img class="card__image" src="../../../assets/images/Adira_Tangled.webp" alt="" onmouseover="set(this)" />        
+
+  <div id="maincard_bloq">
+    <div id="card" class="card" ngModel #card>
+      <div class="face">
+        <div (click)="functionClick()"  class="cropped">
+          <img class="card__image" src={{character.imageUrl}} alt="" />
+        </div>
+        <div (click)="functionClick()" class="card__title">
+          <h3>{{character.name}}</h3>
+        </div>
+      </div>
+      <div class="face behind" (click)="functionClick()">
+        <span class="film">Film: </span>
+         <h4>{{character.films}}</h4>
+        <span class="serial">Serial: </span>
+         <h5>{{character.tvShows}}</h5> 
+        <span class="game">Videogame: </span>
+         <h6>{{character.videoGames}}</h6> 
     </div>
-    <div class="face behind">
-      <span class="film">Film: </span>
-      <h4>{{character.films}}</h4>
-      <span class="serial">Serial: </span>
-      <h5>{{character.tvShows}}</h5>
-      <span class="game">Videogame: </span>
-      <h6>{{character.videoGames}}</h6>
     </div>
   </div>
+
+
+
+
+          
+
+
+
+
+
+
+
 
 

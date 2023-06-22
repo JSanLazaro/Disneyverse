@@ -1,9 +1,17 @@
-<p>maincardturn works!</p>
-<div id="maincard_bloq_turn" class="maincard_bloq_turn">
-    <div class="cropped">
-        <img class="card__image" src="../../../assets/images/Adira_Tangled.webp" alt="" />        
+<!-- <app-maincard (mensaje)="recibirMensaje($event)"></app-maincard> -->
+<div id="maincard_bloq_turn">
+    <div id="card2" class="card2">
+            <div class="face behind">
+                <span class="film">Film: </span>
+                 <h4>{{character.films}}</h4>
+                <span class="serial">Serial: </span>
+                 <h5>{{character.tvShows}}</h5> 
+                <span class="game">Videogame: </span>
+                 <h6>{{character.videoGames}}</h6> 
+            </div>
+        </div>
+        <h1>El mensaje es: {{mensaje}}</h1>
     </div>
-    <div class="card__title">
-        <h2>Adira Tangled</h2>
-    </div>
-</div> 
+  <!--   <app-maincard (mensaje)="recibirMensaje($event)"></app-maincard> -->
+<!-- 
+    <button (click)="enviarmensaje()">Enviar mensaje al padre</button> -->
