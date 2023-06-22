@@ -1,8 +1,9 @@
-a{color: white;}
+a {
+  color: white;
+}
 
 .navigation-menu {
   ul {
-    // Estilos para pantallas grandes
     list-style: none;
     padding: 02%;
     margin: 0;
@@ -11,7 +12,7 @@ a{color: white;}
     transition: transform 0.5s ease-in-out;
     transform: translateX(0);
     text-align: right;
-    margin-right:5% ;
+    margin-right: 5%;
 
     li {
       display: inline-block;
@@ -22,16 +23,19 @@ a{color: white;}
       }
     }
   }
+  label{
+    display: none;
+    margin-bottom: 0.5rem;
+  }
   #menu-toggle {
     display: none;
   }
 
-  // Estilos para pantallas pequeñas
   @media (max-width: 768px) {
     ul {
       transform: translateX(200%);
       position: absolute;
-      top:14% ;
+      top: 14%;
       right: 0;
       background-color: rgba(5, 5, 54, 1);
       z-index: 100;
@@ -48,7 +52,7 @@ a{color: white;}
       display: block;
       cursor: pointer;
       text-align: right;
-      color:white;
+      color: white;
       margin-right: 5%;
     }
 
