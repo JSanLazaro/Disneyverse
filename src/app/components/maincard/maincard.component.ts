@@ -1,6 +1,7 @@
-import { Component,Input } from '@angular/core';
+import { Component,ElementRef,Input,ViewChild } from '@angular/core';
 import { Character } from 'src/app/model/Character.model';
 import { SharedService } from 'src/app/services/shared.service';
+import { Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-maincard',
@@ -9,9 +10,10 @@ import { SharedService } from 'src/app/services/shared.service';
 })
 export class MaincardComponent {
   @Input() character!:Character;
+  @ViewChild('card') cardDiv!: ElementRef;
   texto:string;
   isFront:boolean;
-  constructor(private sharedService: SharedService){
+  constructor(private sharedService: SharedService,private renderer: Renderer2){
     this.texto = "";
     this.isFront = true;
   }
@@ -30,9 +32,24 @@ export class MaincardComponent {
   }
   addToFavorites(){
     console.log("added to favorites "+ this.character._id);
-    this.sharedService.favorites.addId(this.character._id);
+    this.sharedService.favoritesObject.addId(this.character._id);
   }
   removeFromFavoties(id:number){
-    this.sharedService.favorites.removeId(id);
+    this.sharedService.favoritesObject.removeId(id);
+  }
+  turn(){
+    let selector = "card";
+    const card = this.cardDiv;
+    this.addMyClass();
+    console.log("turn card")
+  }
+  addMyClass(){
+    //this.myButton.nativeElement.classList.add("my-class"); //BAD PRACTICE
+    this.renderer.addClass(this.cardDiv.nativeElement, "my-class");
+  }
+
+  removeMyClass(){
+    //this.myButton.nativeElement.classList.remove("my-class"); //BAD PRACTICE
+    this.renderer.removeClass(this.cardDiv.nativeElement, "my-class");
   }
 }

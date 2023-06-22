@@ -12,7 +12,8 @@ import { ModelComponent } from './model/model.component';
 import { HeartComponent } from './components/heart/heart/heart.component';
 import { FavListComponent } from './components/characters/fav-list/fav-list.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CircleCharacterComponent } from './components/characters/circle-character/circle-character.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     FavListComponent,
     ListComponent,
     MaincardComponent,
-    SidebarComponent
+    SidebarComponent,
+    CircleCharacterComponent
     
   ],
   imports: [

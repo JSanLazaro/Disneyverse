@@ -12,7 +12,11 @@ $desktop:1024px;
   background-color: transparent;
 }
 .maincard_bloq:hover .card {
+  
   // transform: rotateY(180deg);
+}
+.my-class{
+  transform: rotateY(180deg);
 }
 .card {
   position: absolute;
