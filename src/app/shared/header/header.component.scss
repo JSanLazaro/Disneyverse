@@ -6,10 +6,11 @@ img{
   margin-left: 1%;
 }
 .navigation-menu {
+  border: 1px solid yellow; 
   ul {
     list-style: none;
-    padding: 02%;
-    margin: 0;
+    
+    margin-top: 2%;
     overflow: hidden;
     white-space: nowrap;
     transition: transform 0.5s ease-in-out;
