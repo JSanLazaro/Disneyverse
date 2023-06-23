@@ -1,4 +1,4 @@
-<div class="maincard_bloq" (click)="greet()">
+<div class="maincard_bloq">
   
   <div id="card" class="card" ngModel #card>
     
@@ -13,7 +13,7 @@
       <div class="heart_image" (click)="addToFavorites()">
         <img src="../../../assets/images/2764.svg" alt="corazon">
       </div>    
-      <div class="card__title">
+      <div class="card__title" (click)="turn()">
        <h3>{{character.name}}</h3> 
       </div>
       

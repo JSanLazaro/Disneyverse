@@ -4,44 +4,47 @@ import { SharedService } from 'src/app/services/shared.service';
 import { Renderer2 } from '@angular/core';
 
 @Component({
-  selector: 'app-maincard',
-  templateUrl: './maincard.component.html',
-  styleUrls: ['./maincard.component.scss']
+  selector: 'app-fav-card',
+  templateUrl: './fav-card.component.html',
+  styleUrls: ['./fav-card.component.scss']
 })
-export class MaincardComponent {
+export class FavCardComponent {
   @Input() character!:Character;
   @ViewChild('card') cardDiv!: ElementRef;
-  texto:string;
   isFront:boolean;
-  constructor(private sharedService: SharedService,private renderer: Renderer2){
-    this.texto = "";
+  constructor(private sharedService: SharedService,private renderer: Renderer2){    
     this.isFront = true;
-  }
-
-  addToFavorites(){
-    console.log("added to favorites "+ this.character._id);
-    this.sharedService.favoritesObject.addId(this.character._id);
-  }
-  removeFromFavoties(id:number){
-    console.log("removed to favorites "+ this.character._id);
-    this.sharedService.favoritesObject.removeId(id);
   }
   turn(){
     if(this.isFront){
-      this.addTurnClass;
+      this.addTurnClass();
     }else{
-      this.addReTurnClass;
+      this.addReTurnClass();
     }
-    this.isFront = !this.isFront;    
+    this.isFront = !this.isFront; 
+    console.log("isFront: " + this.isFront);
   }
+  
+  removeFromFavoties(){
+    console.log("removed to favorites "+ this.character._id);
+    this.sharedService.favoritesObject.removeId(this.character._id);
+  }
+
   addTurnClass(){
     //this.myButton.nativeElement.classList.add("my-class"); //BAD PRACTICE
+    console.log("turning");
     this.renderer.removeClass(this.cardDiv.nativeElement, "re-turn")
     this.renderer.addClass(this.cardDiv.nativeElement, "turn");    
   }
   addReTurnClass(){
+    console.log("returning");
     //this.myButton.nativeElement.classList.add("my-class"); //BAD PRACTICE
     this.renderer.removeClass(this.cardDiv.nativeElement, "turn")
     this.renderer.addClass(this.cardDiv.nativeElement, "re-turn");    
+  }
+
+  removeMyClass(){
+    //this.myButton.nativeElement.classList.remove("my-class"); //BAD PRACTICE
+    this.renderer.removeClass(this.cardDiv.nativeElement, "my-class");
   }
 }

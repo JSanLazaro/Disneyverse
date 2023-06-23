@@ -5,13 +5,16 @@ export class Favorites {
       this.favoritesId.push(id);
     }
   }
-  removeId(id: number) {
+  public removeId(id: number) {
+    console.log("removeId");
     if (this.favoritesId.includes(id)) {
       let index = this.favoritesId.indexOf(id);
       this.favoritesId.slice(index, 1);
+      console.log("removed id: " + id);
     }
   }
   public getFavoritesId() {
     return this.favoritesId;
   }
+
 }

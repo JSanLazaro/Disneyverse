@@ -26,15 +26,7 @@ export class FavListComponent {
     let character = this.characters.find((record) => record._id == characterId);
     return character;
   }
-  putCharacterId(characterId:number){
-    this.favoritesId.push(characterId);
-  }
-  refreshFavoriteCharacters(){
-    this.resetFavoriteCharacters();
-    this.favoritesId.forEach((id)=>{
-      this.favoriteCharacters.push(this.getCharacterById(id)!);
-    })
-  }
+
   resetFavoriteCharacters(){
     this.favoriteCharacters = [];
   }
