@@ -11,29 +11,47 @@ export class FavoriteratingComponent implements AfterViewInit {
   @ViewChild('star3') starDiv3!: ElementRef;
   @ViewChild('star4') starDiv4!: ElementRef;
   @ViewChild('star5') starDiv5!: ElementRef;
+  @ViewChild('p') p!: ElementRef;
 
   @Output () enviarPadre = new EventEmitter<string>();
 
   constructor(private renderer: Renderer2) {
     
   }
-  functionClick2(){
-/*     let text = this.renderer.createText("<img src=../../../assets/images/star.jpg");
-    this.enviarPadre.emit(this.renderer.appendChild(this.starDiv1.nativeElement, text)!); */
+  functionClick1star(){
 
-   /*  let img = this.renderer.createElement('img');
-    let pathSrc = this.renderer.setAttribute(img, 'src', '../../../assets/images/star.jpg');
-    this.enviarPadre.emit(this.renderer.appendChild(this.starDiv1.nativeElement, pathSrc)!); */
-
+  
     const img = this.renderer.createElement('img');
     this.renderer.setAttribute(img, 'src', '../../../assets/images/star.jpg');
-    this.enviarPadre.emit(this.renderer.appendChild(this.starDiv1.nativeElement, img)!);
+    this.renderer.addClass(img, 'stars');
+    const parent = this.p.nativeElement;
+    this.renderer.appendChild(this.starDiv1.nativeElement, img);
+    this.enviarPadre.emit(this.renderer.addClass(parent, 'ocultar')!);
+    this.enviarPadre.emit(this.renderer.insertBefore(parent, img, this.renderer.nextSibling(parent))!);
+    
+
+ 
+
+}
+
+functionClick2star(){
+
+}
+
+functionClick3star(){
+
+}
+
+functionClick4star(){
+
+}
+
+functionClick5star(){
 
 }
 
 ngAfterViewInit() {
-/*   let text = this.renderer.createText("my button");
-  this.renderer.appendChild(this.starDiv1.nativeElement, text); */
+
 }
 }
 
