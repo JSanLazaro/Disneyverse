@@ -2,6 +2,7 @@ import { Component,ElementRef,Input,ViewChild } from '@angular/core';
 import { Character } from 'src/app/model/Character.model';
 import { SharedService } from 'src/app/services/shared.service';
 import { Renderer2 } from '@angular/core';
+import { SidebarComponent } from '../sidebar/sidebar.component';
 
 @Component({
   selector: 'app-maincard',
@@ -17,10 +18,12 @@ export class MaincardComponent {
     this.texto = "";
     this.isFront = true;
   }
+  
 
   addToFavorites(){
     console.log("added to favorites "+ this.character._id);
     this.sharedService.favoritesObject.addId(this.character._id);
+    this.sharedService.toggleOpen();
   }
   removeFromFavoties(id:number){
     console.log("removed to favorites "+ this.character._id);

@@ -2,6 +2,7 @@ import { Component,ElementRef,Input,ViewChild } from '@angular/core';
 import { Character } from 'src/app/model/Character.model';
 import { SharedService } from 'src/app/services/shared.service';
 import { Renderer2 } from '@angular/core';
+import { FavListComponent } from '../characters/fav-list/fav-list.component';
 
 @Component({
   selector: 'app-fav-card',
@@ -12,7 +13,7 @@ export class FavCardComponent {
   @Input() character!:Character;
   @ViewChild('card') cardDiv!: ElementRef;
   isFront:boolean;
-  constructor(private sharedService: SharedService,private renderer: Renderer2){    
+  constructor(private sharedService: SharedService,private renderer: Renderer2, private parent: FavListComponent){    
     this.isFront = true;
   }
   turn(){
@@ -26,8 +27,11 @@ export class FavCardComponent {
   }
   
   removeFromFavoties(){
-    console.log("removed to favorites "+ this.character._id);
+    console.log("fav-card removed from favorites "+ this.character._id);
     this.sharedService.favoritesObject.removeId(this.character._id);
+    this.parent.refreshFavoriteCharactersFromShared();
+    this.sharedService.refreshSidebar();
+    
   }
 
   addTurnClass(){

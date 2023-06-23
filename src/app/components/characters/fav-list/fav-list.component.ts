@@ -19,6 +19,7 @@ export class FavListComponent {
     // this.favoritesId = [7, 32];
     // this.favoriteCharacters.push(this.getCharacterById(7)!);
     // this.favoriteCharacters.push(this.getCharacterById(33)!);
+    console.log("FavLIstComponent constructor")
     this.refreshFavoriteCharactersFromShared();
   }
   
@@ -31,6 +32,7 @@ export class FavListComponent {
     this.favoriteCharacters = [];
   }
   refreshFavoriteCharactersFromShared(){
+    console.log("fav-list component refreshFavoriteCharactersFromShared");
     this.resetFavoriteCharacters();
     this.sharedFavorites.favoritesId.forEach((id)=>{
       this.favoriteCharacters.push(this.getCharacterById(id)!);

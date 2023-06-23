@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable, Output } from '@angular/core';
 import { Favorites } from '../shared/Favorites';
 import { Character } from '../model/Character.model';
 import { characters } from '../shared/mock-characters';
@@ -7,7 +7,11 @@ import { characters } from '../shared/mock-characters';
   providedIn: 'root',
 })
 export class SharedService {
+  @Output() changeOpen: EventEmitter<boolean> = new EventEmitter();
+  @Output() changeRefresh: EventEmitter<boolean> = new EventEmitter();
   public favoritesObject: Favorites = new Favorites();
+  isOpen = false;
+  isRefresh = false;
   constructor() {}
   getFavorites(): Favorites {
     return this.favoritesObject;
@@ -27,5 +31,14 @@ export class SharedService {
     });
     
     return favoriteCharacters;
+  }
+  refreshSidebar(){
+    this.changeRefresh.emit(this.isRefresh);
+  }
+  toggleOpen(){
+    this.isOpen = !this.isOpen;
+    this.isRefresh= !this.isRefresh;
+    this.changeOpen.emit(this.isOpen);
+    this.changeRefresh.emit(this.isRefresh);
   }
 }
