@@ -7,7 +7,12 @@
         <img class="card__image" src={{character.imageUrl}} alt="" />
       </div>
       <div (click)="functionClick()" class="card__title">
-        <h3>{{character.name}}</h3>
+        <div class="tittleFlexDiv"> <!-- Tittle Div for setting heart component. DAVID -->
+          <h3>{{character.name}}</h3>
+        </div>
+        <div class="heartFlexDiv"><!-- Tittle Div for setting heart component. DAVID -->
+          <app-heart></app-heart><!-- Heart component Call. DAVID -->
+        </div>
         
       </div>
       <div class="heartCompDiv"><app-heart></app-heart></div>
