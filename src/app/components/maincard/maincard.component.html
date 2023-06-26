@@ -1,39 +1,30 @@
 <div id="maincard_bloq">
   <div id="card" class="card" ngModel #card>
-    <div class="containerrating"><app-favoriterating></app-favoriterating></div>
+    <div class="containerrating"></div>
     <div class="face">
-     
-      <div (click)="functionClick()"  class="cropped">
-        <img class="card__image" src={{character.imageUrl}} alt="" />
+      <div (click)="functionClick()" class="cropped">
+        <img class="card__image" src="{{ character.imageUrl }}" alt="" />
       </div>
-      <div (click)="functionClick()" class="card__title">
-        <h3>{{character.name}}</h3>
-        
+      <div  class="card__title">
+        <div class="tittleFlexDiv" (click)="functionClick()">
+          <!-- Tittle Div for setting heart component. DAVID -->
+          <h3>{{ character.name }}</h3>
+        </div>
+        <div class="heartFlexDiv">
+          <!-- Tittle Div for setting heart component. DAVID -->
+          <app-heart (click)="addToFavorites()"></app-heart
+          ><!-- Heart component Call. DAVID -->
+        </div>
       </div>
       <div class="heartCompDiv"><app-heart></app-heart></div>
-      
     </div>
     <div class="face behind" (click)="functionClick()">
       <span class="film">Film: </span>
-       <h4>{{character.films}}</h4>
+      <h4>{{ character.films }}</h4>
       <span class="serial">Serial: </span>
-       <h5>{{character.tvShows}}</h5> 
+      <h5>{{ character.tvShows }}</h5>
       <span class="game">Videogame: </span>
-       <h6>{{character.videoGames}}</h6> 
-  </div>
+      <h6>{{ character.videoGames }}</h6>
+    </div>
   </div>
 </div>
-
-
-
-
-          
-
-
-
-
-
-
-
-
-

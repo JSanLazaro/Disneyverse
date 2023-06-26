@@ -9,8 +9,8 @@ import {MaincardturnComponent} from 'src/app/components/maincardturn/maincardtur
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss']
 })
-export class ListComponent {
 
+export class ListComponent {
   characters:Character[] = characters;
 
 

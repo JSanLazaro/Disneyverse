@@ -9,9 +9,14 @@ import { MainComponent } from './shared/main/main.component';
 import { MaincardComponent } from './components/maincard/maincard.component';
 import { ListComponent } from './components/characters/list/list.component';
 import { ModelComponent } from './model/model.component';
-import { HeartComponent } from './heart/heart.component';
-import { FavoriteratingComponent } from './components/favoriterating/favoriterating.component';
 
+import { HeartComponent } from './heart/heart.component';
+import { FavListComponent } from './components/characters/fav-list/fav-list.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CircleCharacterComponent } from './components/characters/circle-character/circle-character.component';
+import { FavCardComponent } from './components/fav-card/fav-card.component';
+import { MaincardturnComponent } from './components/maincardturn/maincardturn.component';
 
 @NgModule({
   declarations: [
@@ -19,15 +24,21 @@ import { FavoriteratingComponent } from './components/favoriterating/favoriterat
     FooterComponent,
     HeaderComponent,
     MainComponent,
-    MaincardComponent,
-    ListComponent,
     ModelComponent,
     HeartComponent,
-    FavoriteratingComponent
+    FavListComponent,
+    ListComponent,
+    MaincardComponent,
+    SidebarComponent,
+    CircleCharacterComponent,
+    FavCardComponent,
+    MaincardturnComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
