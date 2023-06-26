@@ -36,8 +36,10 @@ export class MaincardComponent {
   addToFavorites(){
     console.log("added to favorites "+ this.character._id);
     this.sharedService.favoritesObject.addId(this.character._id);
+    this.sharedService.toggleOpen();
   }
   removeFromFavoties(id:number){
+    console.log("removed to favorites "+ this.character._id);
     this.sharedService.favoritesObject.removeId(id);
   }
 
