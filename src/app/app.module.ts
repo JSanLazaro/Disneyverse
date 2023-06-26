@@ -15,7 +15,8 @@ import { FavListComponent } from './components/characters/fav-list/fav-list.comp
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CircleCharacterComponent } from './components/characters/circle-character/circle-character.component';
-import { FavCardComponent } from './components/fav-card/fav-card.component'
+import { FavCardComponent } from './components/fav-card/fav-card.component';
+import { MaincardturnComponent } from './components/maincardturn/maincardturn.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FavCardComponent } from './components/fav-card/fav-card.component'
     MaincardComponent,
     SidebarComponent,
     CircleCharacterComponent,
-    FavCardComponent
+    FavCardComponent,
+    MaincardturnComponent
     
   ],
   imports: [
