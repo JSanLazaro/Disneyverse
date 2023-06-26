@@ -6,11 +6,12 @@ export class Favorites {
     }
   }
   public removeId(id: number) {
-    console.log("removeId");
+    console.log("Favorites.ts removeId");
     if (this.favoritesId.includes(id)) {
-      let index = this.favoritesId.indexOf(id);
-      this.favoritesId.slice(index, 1);
+      const index = this.favoritesId.indexOf(id);
+      this.favoritesId.splice(index, 1);
       console.log("removed id: " + id);
+      console.log("Los favoritos son: " + this.favoritesId);
     }
   }
   public getFavoritesId() {
