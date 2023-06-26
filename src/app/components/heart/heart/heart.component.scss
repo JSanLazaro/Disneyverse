@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.button {
+  position: 0px;
+  top: 0px;
+  a:link {
+    width: 30px;
+    color: black;
+  }
+  a::selection {
+    color: red;
+  }
+  a:visited {
+    color: red;
+  }
+}

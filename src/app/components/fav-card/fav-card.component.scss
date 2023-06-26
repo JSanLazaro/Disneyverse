@@ -2,10 +2,6 @@ $phone:480px;
 $tablet:728px;
 $desktop:1024px;
 
-/*div {
-  border: 4px solid red;
-}*/
-
 .maincard_bloq {
   height:40dvw;  
   position: relative;
@@ -15,12 +11,15 @@ $desktop:1024px;
   overflow: hidden;
   background-color: transparent;
 }
-.maincard_bloq:hover .card {
+// .maincard_bloq:hover .card {
   
-  // transform: rotateY(180deg);
-}
-.my-class{
+//   // transform: rotateY(180deg);
+// }
+.turn{
   transform: rotateY(180deg);
+}
+.re-turn{
+    transform: rotateY(360deg);
 }
 .card {
   position: absolute;
@@ -84,23 +83,7 @@ $desktop:1024px;
     // color: black;
     // font-size: 2dvh;    
     bottom: 0px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-
   }
-  .heartCompDiv {
-    justify-self: flex-end;
-    padding: 10px;
-  }
-
-  .tittleDiv {
-    flex: 2;
-    padding-left: 30px;
-    padding-top: 14px;
-  }
-  
 }
 
 .face.behind {  

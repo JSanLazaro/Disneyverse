@@ -1,7 +1,9 @@
-<div class="maincard_bloq" (click)="greet()">
-  <div id="card" class="card">
+<div class="maincard_bloq">
+  
+  <div id="card" class="card" ngModel #card>
+    
     <div class="face">
-      <div class="cropped">
+      <div class="cropped" (click)="turn()">
         <img
           class="card__image" src={{character.imageUrl}} alt=""/>
       </div>
