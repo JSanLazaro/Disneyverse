@@ -12,6 +12,7 @@ import {
 } from '@angular/core';
 import { Character } from 'src/app/model/Character.model';
 import { MaincardturnComponent } from 'src/app/components/maincardturn/maincardturn.component';
+import { SharedService } from 'src/app/services/shared.service';
 
 @Component({
   selector: 'app-maincard',
@@ -28,9 +29,16 @@ export class MaincardComponent {
   texto: string;
   isFront: boolean;
 
-  constructor(private renderer: Renderer2) {
+  constructor(private renderer: Renderer2, private sharedService: SharedService) {
     this.texto = '';
     this.isFront = true;
+  }
+  addToFavorites(){
+    console.log("added to favorites "+ this.character._id);
+    this.sharedService.favoritesObject.addId(this.character._id);
+  }
+  removeFromFavoties(id:number){
+    this.sharedService.favoritesObject.removeId(id);
   }
 
   addTurnClass() {
