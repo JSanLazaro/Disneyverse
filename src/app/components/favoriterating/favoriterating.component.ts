@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, Renderer2, Output, EventEmitter, AfterViewInit } from '@angular/core';
+import { Component, ElementRef, Renderer2, Output, EventEmitter, AfterViewInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-favoriterating',
@@ -18,35 +18,90 @@ export class FavoriteratingComponent implements AfterViewInit {
   constructor(private renderer: Renderer2) {
     
   }
-  functionClick1star(){
+functionClick1star(){
 
   
     const img = this.renderer.createElement('img');
-    this.renderer.setAttribute(img, 'src', '../../../assets/images/star.jpg');
+    this.renderer.setAttribute(img, 'src', '../../../assets/images/star.svg');
     this.renderer.addClass(img, 'stars');
-    const parent = this.p.nativeElement;
-    this.renderer.appendChild(this.starDiv1.nativeElement, img);
-    this.enviarPadre.emit(this.renderer.addClass(parent, 'ocultar')!);
-    this.enviarPadre.emit(this.renderer.insertBefore(parent, img, this.renderer.nextSibling(parent))!);
-    
-
- 
-
+    const hideImg = this.starDiv1.nativeElement;
+    const hideImg2 = this.starDiv2.nativeElement;
+    const hideImg3 = this.starDiv3.nativeElement;
+    const hideImg4 = this.starDiv4.nativeElement;
+    const hideImg5 = this.starDiv5.nativeElement;
+    this.enviarPadre.emit(this.renderer.removeClass(hideImg, 'ocultar')!);
+    this.enviarPadre.emit(this.renderer.addClass(hideImg2, 'ocultar')!);
+    this.enviarPadre.emit(this.renderer.addClass(hideImg3, 'ocultar')!);
+    this.enviarPadre.emit(this.renderer.addClass(hideImg4, 'ocultar')!);
+    this.enviarPadre.emit(this.renderer.addClass(hideImg5, 'ocultar')!);
+/*     this.enviarPadre.emit(this.renderer.insertBefore(parent, img, this.renderer.nextSibling(parent))!); */
 }
-
+ 
 functionClick2star(){
-
+  const img = this.renderer.createElement('img');
+  this.renderer.setAttribute(img, 'src', '../../../assets/images/star.svg');
+  this.renderer.addClass(img, 'stars');
+  const parent = this.p.nativeElement;
+  const hideImg = this.starDiv1.nativeElement;
+  const hideImg2 = this.starDiv2.nativeElement;
+  const hideImg3 = this.starDiv3.nativeElement;
+  const hideImg4 = this.starDiv4.nativeElement;
+  const hideImg5 = this.starDiv5.nativeElement;
+  this.enviarPadre.emit(this.renderer.removeClass(hideImg, 'ocultar')!);
+  this.enviarPadre.emit(this.renderer.removeClass(hideImg2, 'ocultar')!);
+  this.enviarPadre.emit(this.renderer.addClass(hideImg3, 'ocultar')!);
+  this.enviarPadre.emit(this.renderer.addClass(hideImg4, 'ocultar')!);
+  this.enviarPadre.emit(this.renderer.addClass(hideImg5, 'ocultar')!);
 }
 
 functionClick3star(){
-
+  const img = this.renderer.createElement('img');
+  this.renderer.setAttribute(img, 'src', '../../../assets/images/star.svg');
+  this.renderer.addClass(img, 'stars');
+  const hideImg = this.starDiv1.nativeElement;
+  const hideImg2 = this.starDiv2.nativeElement;
+  const hideImg3 = this.starDiv3.nativeElement;
+  const hideImg4 = this.starDiv4.nativeElement;
+  const hideImg5 = this.starDiv5.nativeElement;
+  this.enviarPadre.emit(this.renderer.removeClass(hideImg, 'ocultar')!);
+  this.enviarPadre.emit(this.renderer.removeClass(hideImg2, 'ocultar')!);
+  this.enviarPadre.emit(this.renderer.removeClass(hideImg3, 'ocultar')!);
+  this.enviarPadre.emit(this.renderer.addClass(hideImg4, 'ocultar')!);
+  this.enviarPadre.emit(this.renderer.addClass(hideImg5, 'ocultar')!);
 }
 
 functionClick4star(){
-
+  const img = this.renderer.createElement('img');
+  this.renderer.setAttribute(img, 'src', '../../../assets/images/star.svg');
+  this.renderer.addClass(img, 'stars');
+  const parent = this.p.nativeElement;
+  const hideImg = this.starDiv1.nativeElement;
+  const hideImg2 = this.starDiv2.nativeElement;
+  const hideImg3 = this.starDiv3.nativeElement;
+  const hideImg4 = this.starDiv4.nativeElement;
+  const hideImg5 = this.starDiv5.nativeElement;
+  this.enviarPadre.emit(this.renderer.removeClass(hideImg, 'ocultar')!);
+  this.enviarPadre.emit(this.renderer.removeClass(hideImg2, 'ocultar')!);
+  this.enviarPadre.emit(this.renderer.removeClass(hideImg3, 'ocultar')!);
+  this.enviarPadre.emit(this.renderer.removeClass(hideImg4, 'ocultar')!);
+  this.enviarPadre.emit(this.renderer.addClass(hideImg5, 'ocultar')!);
 }
 
 functionClick5star(){
+  const img = this.renderer.createElement('img');
+  this.renderer.setAttribute(img, 'src', '../../../assets/images/star.svg');
+  this.renderer.addClass(img, 'stars');
+  const parent = this.p.nativeElement;
+  const hideImg = this.starDiv1.nativeElement;
+  const hideImg2 = this.starDiv2.nativeElement;
+  const hideImg3 = this.starDiv3.nativeElement;
+  const hideImg4 = this.starDiv4.nativeElement;
+  const hideImg5 = this.starDiv5.nativeElement;
+  this.enviarPadre.emit(this.renderer.removeClass(hideImg, 'ocultar')!);
+  this.enviarPadre.emit(this.renderer.removeClass(hideImg2, 'ocultar')!);
+  this.enviarPadre.emit(this.renderer.removeClass(hideImg3, 'ocultar')!);
+  this.enviarPadre.emit(this.renderer.removeClass(hideImg4, 'ocultar')!);
+  this.enviarPadre.emit(this.renderer.removeClass(hideImg5, 'ocultar')!);
 
 }
 

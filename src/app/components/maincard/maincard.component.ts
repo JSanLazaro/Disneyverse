@@ -46,12 +46,10 @@ export class MaincardComponent {
   addTurnClass() {
     this.renderer.removeClass(this.cardDiv.nativeElement, 'card-returning');
     this.renderer.addClass(this.cardDiv.nativeElement, 'card-turning');
-    console.log('turn class');
   }
   removeTurnClass() {
     this.renderer.removeClass(this.cardDiv.nativeElement, 'card-turning');
     this.renderer.addClass(this.cardDiv.nativeElement, 'card-returning');
-    console.log('remove turn class');
   }
 
   functionClick() {
