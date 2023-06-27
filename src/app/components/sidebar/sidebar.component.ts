@@ -41,9 +41,9 @@ export class SidebarComponent {
     console.log(targetString);
   }
   toggleOpen() {
-    // this.isOpen = !this.isOpen;
+    //this.isOpen = !this.isOpen;
     // this.showSidebar = !this.showSidebar;
-    
+    this.sharedService.toggleOpen();
     console.log('sidebar component toggle Open');
     this.refreshFavoriteCharactersFromShared();
   }
