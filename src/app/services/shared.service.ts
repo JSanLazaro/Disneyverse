@@ -39,6 +39,16 @@ export class SharedService {
     this.isOpen = !this.isOpen;
     this.isRefresh= !this.isRefresh;
     this.changeOpen.emit(this.isOpen);
-    this.changeRefresh.emit(this.isRefresh);
+    this.changeRefresh.emit(this.isRefresh);  
+  }
+  closeSidebar(){
+    this.isOpen = false;
+    this.changeOpen.emit(this.isOpen);
+  }
+  openSidebar(){
+    this.isOpen = true;
+    this.changeOpen.emit(this.isOpen);
+    this.isRefresh= true;
+    this.changeRefresh.emit(this.isRefresh);  
   }
 }
