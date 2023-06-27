@@ -1,6 +1,7 @@
 import {Character} from "../model/Character.model"
 export const characters:Character[] = [
   {
+    editable: false,
     _id: 6,
     films: [],
     shortFilms: [],
@@ -19,6 +20,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 7,
     films: [],
     shortFilms: [],
@@ -37,6 +39,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 10,
     films: [],
     shortFilms: [],
@@ -55,6 +58,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 11,
     films: [],
     shortFilms: [],
@@ -72,6 +76,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 12,
     films: [],
     shortFilms: [],
@@ -91,6 +96,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 13,
     films: [],
     shortFilms: [],
@@ -108,6 +114,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 14,
     films: [
       "The Computer Wore Tennis Shoes",
@@ -130,6 +137,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 15,
     films: [],
     shortFilms: [],
@@ -147,6 +155,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 16,
     films: ["Cheetah"],
     shortFilms: [],
@@ -165,6 +174,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 17,
     films: [],
     shortFilms: [],
@@ -183,6 +193,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 18,
     films: ["The Fox and the Hound", "The Fox and the Hound 2"],
     shortFilms: [],
@@ -201,6 +212,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 19,
     films: [],
     shortFilms: [],
@@ -219,6 +231,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 20,
     films: [],
     shortFilms: [],
@@ -237,6 +250,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 21,
     films: ["The Return of Jafar", "Aladdin and the King of Thieves"],
     shortFilms: [],
@@ -255,6 +269,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 22,
     films: [],
     shortFilms: [],
@@ -272,6 +287,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 23,
     films: [],
     shortFilms: [],
@@ -290,6 +306,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 24,
     films: [
       "Alice in Wonderland (2010 film)",
@@ -315,6 +332,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 25,
     films: [
       "Aladdin (film)",
@@ -361,6 +379,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 26,
     films: [],
     shortFilms: [],
@@ -379,6 +398,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 27,
     films: [],
     shortFilms: [],
@@ -397,6 +417,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 28,
     films: [],
     shortFilms: [],
@@ -415,6 +436,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 29,
     films: [],
     shortFilms: [],
@@ -433,6 +455,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 30,
     films: ["Leroy & Stitch"],
     shortFilms: [],
@@ -451,6 +474,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 31,
     films: ["The Hunchback of Notre Dame", "The Hunchback of Notre Dame II"],
     shortFilms: [],
@@ -469,6 +493,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 33,
     films: ["Aladdin (film)", "Aladdin (2019 film)"],
     shortFilms: [],
@@ -487,6 +512,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 34,
     films: ["Saludos Amigos"],
     shortFilms: [],
@@ -505,6 +531,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 35,
     films: [],
     shortFilms: [],
@@ -522,6 +549,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 36,
     films: [],
     shortFilms: [],
@@ -540,6 +568,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 37,
     films: [],
     shortFilms: [],
@@ -558,6 +587,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 38,
     films: [],
     shortFilms: [],
@@ -576,6 +606,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 40,
     films: [],
     shortFilms: [],
@@ -594,6 +625,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 41,
     films: ["Genius"],
     shortFilms: [],
@@ -612,6 +644,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 42,
     films: ["Mickey's Good Deed"],
     shortFilms: [],
@@ -630,6 +663,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 43,
     films: [],
     shortFilms: ["Mickey's Good Deed"],
@@ -648,6 +682,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 44,
     films: [],
     shortFilms: [],
@@ -666,6 +701,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 45,
     films: ["Mary Poppins (film)", "Mary Poppins Returns"],
     shortFilms: [],
@@ -684,6 +720,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 46,
     films: [],
     shortFilms: [],
@@ -702,6 +739,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 47,
     films: [],
     shortFilms: [],
@@ -719,6 +757,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 48,
     films: [],
     shortFilms: [],
@@ -737,6 +776,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 49,
     films: [],
     shortFilms: [],
@@ -755,6 +795,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 112,
     films: ["Hercules (film)"],
     shortFilms: [],
@@ -773,6 +814,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 119,
     films: ["Zombies", "Zombies 2", "Zombies 3"],
     shortFilms: [],
@@ -791,6 +833,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 130,
     films: [],
     shortFilms: [],
@@ -809,6 +852,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 131,
     films: [],
     shortFilms: [],
@@ -826,6 +870,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 132,
     films: [],
     shortFilms: [],
@@ -844,6 +889,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 133,
     films: [],
     shortFilms: [],
@@ -863,6 +909,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 134,
     films: [],
     shortFilms: [],
@@ -881,6 +928,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 135,
     films: [],
     shortFilms: [],
@@ -899,6 +947,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 136,
     films: ["Bolt (film)"],
     shortFilms: [],
@@ -917,6 +966,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 137,
     films: [],
     shortFilms: [],
@@ -934,6 +984,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 138,
     films: ["Frozen", "Ralph Breaks the Internet", "Frozen II"],
     shortFilms: ["Olaf's Frozen Adventure"],
@@ -952,6 +1003,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 139,
     films: ["The Lion King", "The Lion King (2019 film)"],
     shortFilms: [],
@@ -970,6 +1022,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 140,
     films: [
       "Air Bud",
@@ -999,6 +1052,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 141,
     films: [],
     shortFilms: [],
@@ -1017,6 +1071,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 142,
     films: [],
     shortFilms: [],
@@ -1036,6 +1091,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 143,
     films: [],
     shortFilms: [],
@@ -1053,6 +1109,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 144,
     films: ["Mickey's House of Villains"],
     shortFilms: ["Donald Duck and the Gorilla", "Duck Pimples"],
@@ -1071,6 +1128,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 145,
     films: [],
     shortFilms: [],
@@ -1088,6 +1146,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 146,
     films: [],
     shortFilms: [],
@@ -1106,6 +1165,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 147,
     films: [],
     shortFilms: [],
@@ -1123,6 +1183,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 148,
     films: [
       "The Jungle Book",
@@ -1145,6 +1206,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 149,
     films: [],
     shortFilms: [],
@@ -1163,6 +1225,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 150,
     films: [],
     shortFilms: [],
@@ -1181,6 +1244,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 151,
     films: [],
     shortFilms: [],
@@ -1199,6 +1263,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 152,
     films: [],
     shortFilms: [],
@@ -1217,6 +1282,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 153,
     films: ["Elena and the Secret of Avalor"],
     shortFilms: [],
@@ -1235,6 +1301,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 154,
     films: ["Dinosaur"],
     shortFilms: [],
@@ -1253,6 +1320,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 155,
     films: ["Dinosaur"],
     shortFilms: [],
@@ -1271,6 +1339,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 156,
     films: [
       "Aladdin (film)",
@@ -1349,6 +1418,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 157,
     films: ["Freaky Friday (2003 film)"],
     shortFilms: [],
@@ -1367,6 +1437,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 158,
     films: ["Robin Hood (film)"],
     shortFilms: [],
@@ -1385,6 +1456,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 159,
     films: ["Mary Poppins (film)"],
     shortFilms: [],
@@ -1403,6 +1475,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 160,
     films: [],
     shortFilms: [],
@@ -1421,6 +1494,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 161,
     films: [],
     shortFilms: [],
@@ -1439,6 +1513,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 162,
     films: [],
     shortFilms: [],
@@ -1457,6 +1532,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 163,
     films: ["Beverly Hills Chihuahua 2"],
     shortFilms: [],
@@ -1475,6 +1551,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 164,
     films: [],
     shortFilms: [],
@@ -1493,6 +1570,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 165,
     films: [],
     shortFilms: [],
@@ -1511,6 +1589,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 166,
     films: [],
     shortFilms: [],
@@ -1529,6 +1608,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 167,
     films: ["The Little Mermaid II: Return to the Sea"],
     shortFilms: [],
@@ -1547,6 +1627,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 168,
     films: ["Lemonade Mouth"],
     shortFilms: [],
@@ -1565,6 +1646,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 169,
     films: [],
     shortFilms: [],
@@ -1583,6 +1665,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 170,
     films: [],
     shortFilms: [],
@@ -1601,6 +1684,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 171,
     films: [],
     shortFilms: [],
@@ -1619,6 +1703,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 172,
     films: [],
     shortFilms: [],
@@ -1637,6 +1722,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 173,
     films: [
       "Beverly Hills Chihuahua 2",
@@ -1658,6 +1744,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 174,
     films: [
       "Alice in Wonderland (1951 film)",
@@ -1723,6 +1810,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 175,
     films: ["Alice Comedies"],
     shortFilms: [],
@@ -1741,6 +1829,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 176,
     films: ["Alice in Wonderland (1951 film)"],
     shortFilms: [],
@@ -1759,6 +1848,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 177,
     films: ["Rudyard Kipling's The Jungle Book"],
     shortFilms: [],
@@ -1777,6 +1867,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 178,
     films: ["Chicken Little (film)"],
     shortFilms: [],
@@ -1795,6 +1886,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 179,
     films: [],
     shortFilms: [],
@@ -1813,6 +1905,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 180,
     films: ["The Story of Robin Hood and His Merrie Men"],
     shortFilms: [],
@@ -1831,6 +1924,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 181,
     films: [],
     shortFilms: [],
@@ -1849,6 +1943,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 182,
     films: ["The Aristocats"],
     shortFilms: [],
@@ -1867,6 +1962,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 183,
     films: ["Oliver & Company"],
     shortFilms: [],
@@ -1885,6 +1981,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 184,
     films: [],
     shortFilms: [],
@@ -1903,6 +2000,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 185,
     films: ["I'll Be Home for Christmas"],
     shortFilms: [],
@@ -1921,6 +2019,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 186,
     films: ["Fantasia", "Mickey's Twice Upon a Christmas"],
     shortFilms: [],
@@ -1939,6 +2038,7 @@ export const characters:Character[] = [
     __v: 0,
   },
   {
+    editable: false,
     _id: 187,
     films: ["Hocus Pocus"],
     shortFilms: [],

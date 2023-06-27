@@ -15,4 +15,5 @@ export interface Character{
     url: string,
     __v: number,
     alignment?:string;
+    editable: boolean;
 }

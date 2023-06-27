@@ -1,4 +1,4 @@
-import { Component,ElementRef,Input,ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { Character } from 'src/app/model/Character.model';
 import { SharedService } from 'src/app/services/shared.service';
 import { Renderer2 } from '@angular/core';
@@ -10,45 +10,49 @@ import { FavListComponent } from '../characters/fav-list/fav-list.component';
   styleUrls: ['./fav-card.component.scss']
 })
 export class FavCardComponent {
-  @Input() character!:Character;
+  @Input() character!: Character;
   @ViewChild('card') cardDiv!: ElementRef;
-  isFront:boolean;
-  constructor(private sharedService: SharedService,private renderer: Renderer2, private parent: FavListComponent){    
+  isFront: boolean;
+  constructor(private sharedService: SharedService, private renderer: Renderer2, private parent: FavListComponent) {
     this.isFront = true;
   }
-  turn(){
-    if(this.isFront){
+
+  turn() {
+    if (this.isFront) {
       this.addTurnClass();
-    }else{
+    } else {
       this.addReTurnClass();
     }
-    this.isFront = !this.isFront; 
+    this.isFront = !this.isFront;
     console.log("isFront: " + this.isFront);
   }
-  
-  removeFromFavoties(){
-    console.log("fav-card removed from favorites "+ this.character._id);
+
+  removeFromFavoties() {
+    console.log("fav-card removed from favorites " + this.character._id);
     this.sharedService.favoritesObject.removeId(this.character._id);
     this.parent.refreshFavoriteCharactersFromShared();
     this.sharedService.refreshSidebar();
-    
   }
 
-  addTurnClass(){
-    //this.myButton.nativeElement.classList.add("my-class"); //BAD PRACTICE
+  addTurnClass() {
     console.log("turning");
     this.renderer.removeClass(this.cardDiv.nativeElement, "re-turn")
-    this.renderer.addClass(this.cardDiv.nativeElement, "turn");    
-  }
-  addReTurnClass(){
-    console.log("returning");
-    //this.myButton.nativeElement.classList.add("my-class"); //BAD PRACTICE
-    this.renderer.removeClass(this.cardDiv.nativeElement, "turn")
-    this.renderer.addClass(this.cardDiv.nativeElement, "re-turn");    
+    this.renderer.addClass(this.cardDiv.nativeElement, "turn");
   }
 
-  removeMyClass(){
-    //this.myButton.nativeElement.classList.remove("my-class"); //BAD PRACTICE
-    this.renderer.removeClass(this.cardDiv.nativeElement, "my-class");
+  addReTurnClass() {
+    console.log("returning");
+    this.renderer.removeClass(this.cardDiv.nativeElement, "turn")
+    this.renderer.addClass(this.cardDiv.nativeElement, "re-turn");
+  }
+
+  toggleEdit() {
+    this.character.editable = true;
+  }
+
+  saveChanges() {
+    this.character.editable = true;
+    
   }
 }
+
