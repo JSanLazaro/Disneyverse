@@ -43,7 +43,11 @@ export class SidebarComponent {
   toggleOpen() {
     //this.isOpen = !this.isOpen;
     // this.showSidebar = !this.showSidebar;
+<<<<<<< HEAD
     this.sharedService.toggleOpen();
+=======
+    this.sharedService.closeSidebar();
+>>>>>>> feature_slide_Left_jesus
     console.log('sidebar component toggle Open');
     this.refreshFavoriteCharactersFromShared();
   }
