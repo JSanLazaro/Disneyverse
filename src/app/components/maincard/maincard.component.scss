@@ -1,16 +1,13 @@
 $phone:480px;
 $tablet:728px;
 $desktop:1024px;
+
 .maincard_bloq {
   height:40dvw;
   margin-top: 5%;
-}
-#maincard_bloq {
-  height: 30vw;
   position: relative;
   // border: 3px solid blue;
   // border-radius: 10%;
-  margin-bottom: 20%;
   overflow: hidden;
   background-color: transparent;
 }
@@ -92,6 +89,7 @@ $desktop:1024px;
     /*border: 2px solid red;*/
     justify-self: flex-end;
     padding: 10px;
+    right:2%;
   }
   .tittleFlexDiv {
     display: flex;
@@ -101,6 +99,7 @@ $desktop:1024px;
     /*padding-left: 30px;
     padding-top: 10px;*/
     align-self: flex-start;
+    max-width: 80%;
   }
   //* [End] Heart and tittle component CSS (DAVID) <- *//
 }
