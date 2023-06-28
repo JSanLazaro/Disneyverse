@@ -97,6 +97,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy":{
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://JSanLazaro.github.io/Disneyverse/",
+            "name": "Disneyverse",
+            "email": "jsanlazaro@hotmail.com"
+          }
         }
       }
     }
