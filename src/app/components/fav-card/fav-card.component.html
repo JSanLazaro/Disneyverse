@@ -6,6 +6,7 @@
       </div>
       <div class="heart_image" (click)="removeFromFavoties()">
         <img src="../../../assets/images/1f5d1.png" alt="basura" />
+      
       </div>
       <div class="card__title" (click)="toggleEdit()" [contentEditable]="character.editable">
         <h3>{{character.name}}</h3>
@@ -21,4 +22,4 @@
     </div>
   </div>
 </div>
-<button *ngIf="character.editable" (click)="saveChanges()">Guardar</button>
+
