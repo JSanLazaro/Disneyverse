@@ -31,8 +31,7 @@ import { share } from 'rxjs';
 export class SidebarComponent {
   isOpen = false;  
   characters: Character[];
-  // showSidebar = false;
-  
+
   constructor(private sharedService: SharedService) {
     this.characters = sharedService.getFavoriteCharacters();
   }
@@ -41,8 +40,6 @@ export class SidebarComponent {
     console.log(targetString);
   }
   toggleOpen() {
-    //this.isOpen = !this.isOpen;
-    // this.showSidebar = !this.showSidebar;
     this.sharedService.closeSidebar();
     console.log('sidebar component toggle Open');
     this.refreshFavoriteCharactersFromShared();

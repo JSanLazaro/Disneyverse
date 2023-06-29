@@ -5,16 +5,11 @@ $desktop:1024px;
 .maincard_bloq {
   height:40dvw;  
   position: relative;
-  // border: 3px solid blue;
-  // border-radius: 10%;
   margin-bottom: 20%;
   overflow: hidden;
   background-color: transparent;
 }
-// .maincard_bloq:hover .card {
-  
-//   // transform: rotateY(180deg);
-// }
+
 .turn{
   transform: rotateY(180deg);
 }
@@ -27,8 +22,6 @@ $desktop:1024px;
   height: 100%;
   transform-style: preserve-3d;
   transition: all 0.5s linear;
-  // border: 3px solid blue;
-  // border-radius: 10%;
   background-color: transparent;
 }
 
@@ -46,8 +39,6 @@ $desktop:1024px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  // box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-  position: absolute;
   backface-visibility: hidden;
   .cropped {
     position: absolute;
@@ -56,14 +47,9 @@ $desktop:1024px;
     height: 70%;
     overflow: hidden;
     border-radius: 15px;
-    // border: 2px solid black;
     contain: content;
     img {
       width: 100%;
-      // height: auto;
-      //   margin: -25px 0px 0px 0px;
-      // object-fit: contain;
-      
     }
     @supports(object-fit: cover){
         img{
@@ -79,9 +65,7 @@ $desktop:1024px;
   }
   .card__title {
     position: absolute;
-    color: whitesmoke;
-    // color: black;
-    // font-size: 2dvh;    
+    color: whitesmoke; 
     bottom: 0px;
   }
 }
@@ -89,11 +73,9 @@ $desktop:1024px;
 .face.behind {  
   transform: rotateY(180deg);
   span.film, span.serial,span.game{
-    // color: rgb(21, 16, 63);
     color: aquamarine;
   }
   h2,h3,h4,h5,h6{
-    // color: aquamarine;
     color: rgb(21, 16, 63);
   }
 }
@@ -117,4 +99,8 @@ $desktop:1024px;
     margin-bottom: 20%;
   }
   
+}
+
+.containerrating{
+  z-index: 2;
 }

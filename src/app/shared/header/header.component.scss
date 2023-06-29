@@ -38,26 +38,45 @@ img{
 
   @media (max-width: 768px) {
     @keyframes menu-lateral {
-      from { right: -48%;}  /* Primer fotograma */
-      to { right: 0%; }  /* Segundo y último fotograma */
-    }
-    
-    
-    .MostrarMenu{
-      display: block !important;
-      animation: menu-lateral 1s ease 0s;
-  }
+      from { right: -48%;} 
+     to { right: 0%; }   
+
+     
+   } 
+
+   @keyframes menu-lateral2 {
+     from { right: 0%;} 
+     to { right: -48%; } 
+   }
+
+   
+   
+   .MostrarMenu{
+     display: block !important;
+     position: absolute;
+    animation: menu-lateral 1s ease 0s; 
+ }
+
+ .OcultarMenu{
+   animation: menu-lateral2 1s ease 0s;
+   position: absolute;
+   
+ }
+
+
+ .ocultarDisplay{
+   display: none;
+ }
     
     ul {
-/*       transform: translateX(200%); */
       position: absolute;
-      top: 7%;
+      top: 11%;
       right: 0px;
       background-color: rgba(5, 5, 54, 1);
       z-index: 100;
       padding: 20px;
       transition: transform 0.5s ease-in-out;
-      display: none;
+   /*    display: none; */
     
    
 

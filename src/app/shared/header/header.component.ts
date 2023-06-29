@@ -14,19 +14,20 @@ export class HeaderComponent {
     this.isFront = true;
   }
   
-
-  functionClick(){
+  openMenu(){
     const menu = this.menuMovil.nativeElement;
     if(this.isFront){
-    this.renderer.addClass(menu, 'MostrarMenu')
-    }
+        this.renderer.addClass(menu, 'MostrarMenu')
+      this.renderer.removeClass(menu, 'OcultarMenu')
+      this.renderer.removeClass(menu, 'ocultarDisplay');  
+   }
     else{
       this.renderer.removeClass(menu, 'MostrarMenu')
-    }
-    this.isFront = !this.isFront;
+      this.renderer.addClass(menu, 'OcultarMenu') 
+      setTimeout(() => {
+        this.renderer.addClass(menu, 'ocultarDisplay');
+      }, 900);  
   }
-
-
-
-
+     this.isFront = !this.isFront; 
+  }
 }
