@@ -33,11 +33,3 @@ Maria-VBV
 PabloEsteban87
 DirtdiverIV 
 Maesga1
-<<<<<<< HEAD
-
-​
-​
-
-​
-=======
->>>>>>> develop_universe
