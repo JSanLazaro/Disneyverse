@@ -41,4 +41,20 @@ export class SharedService {
     this.changeOpen.emit(this.isOpen);
     this.changeRefresh.emit(this.isRefresh);
   }
+  
+  /*CORAZON DAVID*/
+  isCharacterInFavorites(characterId: number): boolean {
+    return this.favoritesObject.favoritesId.includes(characterId);
+  }
+  private isCharacterFavorite: boolean = false;
+
+  setIsCharacterFavorite(value: boolean) {
+    this.isCharacterFavorite = value;
+  }
+
+  getIsCharacterFavorite(): boolean {
+    return this.isCharacterFavorite;
+  }
+   /*CORAZON DAVID*/
+  
 }

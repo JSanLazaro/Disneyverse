@@ -1,3 +1,4 @@
-<div id="heartDiv" class="heartDiv" >
-    <img type="button" (click)='updateImage()' id="heartImg" class="heartImg" src="../../../assets/images/heartBlack.png" alt="">
-</div>
+<div id="heartDiv" class="heartDiv">
+    <img *ngIf="isFavorite()" type="button" (click)="updateImage()" id="heartImg" class="heartImg" src="../../../assets/images/heartBlack.png" alt="">
+    <img *ngIf="!isFavorite()" type="button" (click)="updateImage()" id="heartImg" class="heartImg" src="../../../assets/images/heartRed.png" alt="">
+  </div>
