@@ -1,0 +1,14 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<div class="navigation-menu">
+  <nav>
+  <img src="../../../assets/images/LOGO.png" alt="">
+  <input  type="checkbox" id="menu-toggle">
+  <label (click)="openMenu()" for="menu-toggle" class="menu-icon">&#9776;</label>
+  <ul  ngmodel #menuMovil>
+    <li><a class="nav-link" routerLink="" >Inicio</a></li>
+    <li><a class="nav-link" routerLink="favorites" >Favoritos</a></li>
+  </ul>
+</nav>
+</div>

@@ -1,0 +1,106 @@
+$phone:480px;
+$tablet:728px;
+$desktop:1024px;
+
+.maincard_bloq {
+  height:40dvw;  
+  position: relative;
+  margin-bottom: 20%;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.turn{
+  transform: rotateY(180deg);
+}
+.re-turn{
+    transform: rotateY(360deg);
+}
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+  background-color: transparent;
+}
+
+.face {
+  box-sizing: border-box;
+  position: absolute;
+
+  border: 3px solid white;
+  border-radius: 15px;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(70, 130, 180, 0.88);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backface-visibility: hidden;
+  .cropped {
+    position: absolute;
+    min-width: 85%;
+    max-width: 90%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 15px;
+    contain: content;
+    img {
+      width: 100%;
+    }
+    @supports(object-fit: cover){
+        img{
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+  }
+  .heart_image{
+    position: absolute;   
+    bottom: 0px;
+    right: 0;
+  }
+  .card__title {
+    position: absolute;
+    color: whitesmoke; 
+    bottom: 0px;
+  }
+}
+
+.face.behind {  
+  transform: rotateY(180deg);
+  span.film, span.serial,span.game{
+    color: aquamarine;
+  }
+  h2,h3,h4,h5,h6{
+    color: rgb(21, 16, 63);
+  }
+}
+@media (max-width:$phone){
+  .maincard_bloq{
+    height:80dvw;
+    margin-bottom: 10%;
+  }
+  
+}
+@media (min-width:$phone) and (max-width: $tablet){
+  .maincard_bloq{
+    height:60dvw;
+    margin-bottom: 15%;
+  }
+  
+}
+@media (min-width:$desktop) {
+  .maincard_bloq{
+    height:40dvw;
+    margin-bottom: 20%;
+  }
+  
+}
+
+.containerrating{
+  z-index: 2;
+}

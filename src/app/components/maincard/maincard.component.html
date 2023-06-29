@@ -1,0 +1,27 @@
+<div id="maincard_bloq" class="maincard_bloq">
+  <div id="card" class="card" ngModel #card>
+    <div class="face">
+      <div (click)="functionClick()" class="cropped">
+        <img class="card__image" src="{{ character.imageUrl }}" alt="" />
+      </div>
+      <div class="card__title tittleFlexDiv" >
+        <h3 (click)="functionClick()">{{ character.name }}</h3>
+        <div class="heartFlexDiv">
+          <!-- Tittle Div for setting heart component. DAVID -->
+          <app-heart (click)="addToFavorites()"></app-heart
+          ><!-- Heart component Call. DAVID -->
+        </div>
+      </div>
+
+      <div class="heartCompDiv"><app-heart></app-heart></div>
+    </div>
+    <div class="face behind" (click)="functionClick()">
+      <span class="film">Film: </span>
+      <h4>{{ character.films }}</h4>
+      <span class="serial">Serial: </span>
+      <h5>{{ character.tvShows }}</h5>
+      <span class="game">Videogame: </span>
+      <h6>{{ character.videoGames }}</h6>
+    </div>
+  </div>
+</div>
